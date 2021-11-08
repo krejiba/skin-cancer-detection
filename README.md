@@ -1,6 +1,8 @@
 # Classification of skin lesions | Pytorch
 We use transfer learning in order to classify images of suspicious skin lesions into three categories: melanoma, nevus, and seborrheic keratosis.
-
+<p align="center">
+  <img src="/images/samples.png" alt="skin lesions" />
+</p>
 ### How to use:
 You need to download all the files in your working directory. Make sure to install the packages listed below in order to make use of this code.
 
@@ -15,7 +17,11 @@ For time saving purposes, we used Google Colab to run the code on a GPU device.
 We reccommand the following order:
 1) You can use `EDA.ipynb` to inspect the images in the `/data` directory.
 2) You can use `Training.ipynb` to train the model. The code automatically saves versions of the trained model in the `/out` directory. You just need to choose the one you want to use for inference and rename it as `model.pth`.
-3) You can use `Inference.ipynb` to evaluate the model you chose. The code plots an ROC curve for two binary classification tasks: melanoma detection and cellular origin determination.
+3) You can use `Inference.ipynb` to evaluate the model you chose. The code plots an ROC curve for two binary classification tasks: melanoma detection and cellular origin determination.  
+<p align="center">
+  <img src="/images/roc.png" alt="roc curve melanoma"/>
+</p>
+  
 ----
 Python 3.7.12  
 NumPy 1.19.5  
